@@ -206,18 +206,14 @@ div.contenedor_index {
   .item_index {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
+    background-image: url(../Multimedias/especialpadre.jpg);
     background-size: cover;
   }
-
-  li {
-    font-size: 15px;
-  }
-
   .item {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-right: 35px;
   }
 
   .titulo_index {
@@ -225,6 +221,8 @@ div.contenedor_index {
     text-align: center;
     display: block;
     width: min-content;
+    margin-right: 110px;
+    margin-top: 60px;
   }
 
   .nav_index {
@@ -244,39 +242,36 @@ div.contenedor_index {
     text-align: center;
     display: block;
   }
-
-  .contenido_mujer {
-    grid-area: contenido_mujer;
-    text-align: center;
-    max-width: min-content;
+  .textodiadelpadre{
+    display: block;
     text-align: justify;
+    margin-top: 15px;
   }
-
   .contenido_hombre {
     grid-area: contenido_hombre;
     text-align: center;
     max-width: min-content;
-    text-align: justify;
-    margin-left: 40px;
+    text-align: center;
+    margin-left: 25%;
+    font-style: oblique;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
   }
-
-  .contenido_ninos {
-    grid-area: contenido_ninos;
-    text-align: justify;
-    max-width: min-content;
-    margin-bottom: 60px;
+  header{
+    height: 100%;
+    background-color: dodgerblue;
   }
-
-  .contenido_accesorios {
-    grid-area: contenido_accesorios;
-    justify-content: center;
-    max-width: min-content;
-    text-align: justify;
-    margin-left: 20px;
+  header:hover{
+    height: 200px;
   }
 
   .section_index {
     text-align: center;
+    background-image: linear-gradient( white, blue );
   }
 
   .contenedor_index {
@@ -288,6 +283,7 @@ div.contenedor_index {
     margin-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
+
   }
 
   .tituloventa {
@@ -300,22 +296,22 @@ div.contenedor_index {
     flex-direction: column;
   }
 
-  .imagen1 {
-    width: 140px;
-  }
 
   .fotohombre {
     width: 208px;
     justify-content: center;
+    transform: skew( 10deg, 10deg) ;
   }
 
-  .imagen3 {
-    width: 160px;
+  @keyframes aparecer {
+    0% {opacity: 100%;}
+    25%{opacity:75%;}
+    50%{opacity: 50%;
+    width: 250px; }
+    75%{opacity: 75%;}
+    100%{opacity: 0%;}
   }
-
-  .imagen4 {
-    width: 200px;
-  }
+   
 
   footer {
     grid-area: footer;
@@ -349,24 +345,27 @@ div.contenedor_index {
   .item_quienessomos {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
+    background-image: url(../Multimedias/especialpadre.jpg);
     background-size: cover;
-  }
-
-  li {
-    font-size: 15px;
   }
 
   .item {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-right: 35px;
   }
   .titulo_index {
     font-size: 20px;
     text-align: center;
     display: block;
     width: min-content;
+    margin-right: 110px;
+    margin-top: 60px;
+  }
+  .nav_index{
+    grid-area: nav;
+    display: flex;
   }
   footer {
     grid-area: footer;
@@ -404,7 +403,7 @@ div.contenedor_index {
   .item_index {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
+    background-image: url(../Multimedias/especialpadre.jpg);
     background-size: cover;
   }
 
@@ -416,27 +415,58 @@ div.contenedor_index {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-right: 35px;
   }   
+
+  .titulo_index{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: min-content;
+    margin-right: 110px;
+    margin-top: 60px;
+  }
 }
+
+@media only screen and (max-width: 468px) {
+  .item_index {
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: url(../Multimedias/especialpadre.jpg);
+    background-size: cover;
+  }
+  .item_nuestrodproduct {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 35px;
+  }
+
+  .titulo {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: min-content;
+    margin-right: 110px;
+    margin-top: 60px;
+  }
+
+  .nav_index {
+    grid-area: nav;
+
+    display: flex;
+  }
 
 @media only screen and (min-width: 468px) and (max-width: 1023px) {
   .item_index {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
+    background-image: url(../Multimedias/especialpadre.jpg);
     background-size: cover;
   }
 
   li {
     font-size: 17px;
-  }
-
-  .item {
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    margin-top: 40px;
-    gap: 15px;
   }
 
   .titulo_index {
@@ -571,7 +601,7 @@ div.contenedor_index {
   .item_index {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(../Multimedias/valentine-day-romantic-background-free-photo.jpg);
+    background-image: url(../Multimedias/especialpadre.jpg);
     background-size: cover;
   }
 
