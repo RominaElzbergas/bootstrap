@@ -9,10 +9,6 @@ li {
   font-size: 20px;
 }
 
-.fondoquienes {
-  background-image: url(../Multimedias/fondomarm.jpg);
-}
-
 a {
   color: #000;
   text-decoration: none;
@@ -50,11 +46,6 @@ a:hover {
   font-size: 40px;
 }
 
-.fondo {
-  background-image: url(../Multimedias/fondocontac.jpg);
-  background-size: cover;
-}
-
 .titulo3 {
   text-align: center;
   font-size: 45px;
@@ -66,11 +57,6 @@ a:hover {
   text-align: center;
   display: inline-block;
   width: 700px;
-}
-
-footer {
-  background-image: url(../Multimedias/oro.jpg);
-  background-size: cover;
 }
 
 .tituloredes {
@@ -96,10 +82,6 @@ footer {
 
 .contenedor_realizarpedidos {
   text-align: center;
-}
-
-section {
-  background-image: url(../Multimedias/fondomarm.jpg);
 }
 
 .section_nuestrosproductos {
@@ -203,26 +185,28 @@ div.contenedor_index {
 }
 
 @media only screen and (max-width: 468px) {
-  .item_index {
-    display: flex;
-    flex-direction: row-reverse;
+
+  header {
     background-image: url(../Multimedias/especialpadre.jpg);
-    background-size: cover;
+    background-size: cover;  
   }
   .item {
-    display: flex;
+    display: block;
     text-align: center;
     flex-direction: column;
-    margin-right: 35px;
+    margin-right: 15px;
+     }
+  li {
+    font-size: 17px;
   }
-
+ 
   .titulo_index {
     font-size: 20px;
     text-align: center;
     display: block;
     width: min-content;
     margin-right: 110px;
-    margin-top: 60px;
+   
   }
 
   .nav_index {
@@ -237,12 +221,7 @@ div.contenedor_index {
     display: block;
   }
 
-  .subtitulo_indumentariayaccesorios {
-    grid-area: subtitulo_indumentariayaccesorios;
-    text-align: center;
-    display: block;
-  }
-  .textodiadelpadre{
+  .textodiadelpadre {
     display: block;
     text-align: justify;
     margin-top: 15px;
@@ -259,19 +238,17 @@ div.contenedor_index {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    
   }
-  header{
+  header {
     height: 100%;
     background-color: dodgerblue;
   }
-  header:hover{
+  header:hover {
     height: 200px;
   }
-
   .section_index {
     text-align: center;
-    background-image: linear-gradient( white, blue );
+    background-image: linear-gradient(white, blue);
   }
 
   .contenedor_index {
@@ -283,7 +260,6 @@ div.contenedor_index {
     margin-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
-
   }
 
   .tituloventa {
@@ -296,21 +272,35 @@ div.contenedor_index {
     flex-direction: column;
   }
 
-
   .fotohombre {
     width: 208px;
     justify-content: center;
-    transform: skew( 10deg, 10deg) ;
+    transform: skew(10deg, 10deg);
   }
-
+.seguir{
+  display: flex;
+  width: 100%;
+}
+  footer {
+    background-image: url(../Multimedias/oro.jpg);
+  }
   @keyframes aparecer {
-    0% {opacity: 100%;}
-    25%{opacity:75%;}
-    50%{opacity: 50%;}
-    75%{opacity: 25%;}
-    100%{opacity: 0%;}
+    0% {
+      opacity: 100%;
+    }
+    25% {
+      opacity: 75%;
+    }
+    50% {
+      opacity: 50%;
+    }
+    75% {
+      opacity: 25%;
+    }
+    100% {
+      opacity: 0%;
+    }
   }
-   
 
   footer {
     grid-area: footer;
@@ -340,150 +330,42 @@ div.contenedor_index {
   }
 }
 
-@media only screen and (max-width: 468px) {
-  .item_quienessomos {
-    display: flex;
-    flex-direction: row-reverse;
+@media only screen and (min-width: 468px) and (max-width: 1023px) {
+  header {
+    display: block;
     background-image: url(../Multimedias/especialpadre.jpg);
     background-size: cover;
   }
-
   .item {
-    display: flex;
+    display: block;
     text-align: center;
     flex-direction: column;
-    margin-right: 35px;
-  }
-  .titulo_index {
-    font-size: 20px;
-    text-align: center;
-    display: block;
-    width: min-content;
-    margin-right: 110px;
-    margin-top: 60px;
-  }
-  .nav_index{
-    grid-area: nav;
-    display: flex;
-  }
-  footer {
-    grid-area: footer;
-    background-size: cover;
-    padding-top: 38px;
-  }
-
-  ul {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-  }
-  .tituloredes {
-    width: min-content;
-  }
-  .face {
-    width: 50px;
-  }
-  .insta {
-    width: 50px;
-  }
-  .correo {
-    width: 50px;
-  }
-  .wpp {
-    width: 50px;
-  }
-  .contenedor_quienes {
-    width: 450px;
-  }
-}
-
-@media only screen and (max-width: 468px){
-  .item_index {
-    display: flex;
-    flex-direction: row-reverse;
-    background-image: url(../Multimedias/especialpadre.jpg);
-    background-size: cover;
-  }
+    margin-left: 180px;}
 
   li {
     font-size: 15px;
-  }
-
-  .item {
-    display: flex;
-    text-align: center;
     flex-direction: column;
-    margin-right: 35px;
-  }   
+    display: flex;
+    
+  }
 
-  .titulo_index{
-    font-size: 20px;
+  .section_index {
     text-align: center;
-    display: block;
-    width: min-content;
-    margin-right: 110px;
-    margin-top: 60px;
-  }
-}
-
-@media only screen and (max-width: 468px) {
-  .item_index {
-    display: flex;
-    flex-direction: row-reverse;
-    background-image: url(../Multimedias/especialpadre.jpg);
-    background-size: cover;
-  }
-  .item_nuestrodproduct {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin-right: 35px;
-  }
-
-  .titulo {
-    font-size: 20px;
-    text-align: center;
-    display: block;
-    width: min-content;
-    margin-right: 110px;
-    margin-top: 60px;
-  }
-
-  .nav_index {
-    grid-area: nav;
-
-    display: flex;
-  }
-
-@media only screen and (min-width: 468px) and (max-width: 1023px) {
-  .item_index {
-    display: flex;
-    flex-direction: row-reverse;
-    background-image: url(../Multimedias/especialpadre.jpg);
-    background-size: cover;
-  }
-
-  li {
-    font-size: 17px;
+    background-image: linear-gradient(white, blue);
   }
 
   .titulo_index {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
-    display: block;
     width: min-content;
     font: cursiva;
     font-style: italic;
-    margin-top: 80px;
     max-width: min-content;
-    padding-right: 10px;
+
   }
 
   .nav_index {
-    grid-area: nav;
     display: flex;
-    height: 200px;
   }
 
   .subtitulo {
@@ -492,40 +374,17 @@ div.contenedor_index {
     display: block;
   }
 
-  .subtitulo_indumentariayaccesorios {
-    grid-area: subtitulo_indumentariayaccesorios;
-    text-align: center;
-    display: block;
-  }
-
-  .contenido_mujer {
-    grid-area: contenido_mujer;
-    text-align: center;
-    max-width: min-content;
-    text-align: justify;
-  }
-
   .contenido_hombre {
-    grid-area: contenido_hombre;
     text-align: center;
     max-width: min-content;
     text-align: justify;
-    margin-left: 40px;
-  }
-
-  .contenido_ninos {
-    grid-area: contenido_ninos;
-    text-align: justify;
-    max-width: min-content;
-    margin-bottom: 60px;
-  }
-
-  .contenido_accesorios {
-    grid-area: contenido_accesorios;
-    justify-content: center;
-    max-width: min-content;
-    text-align: justify;
-    margin-left: 20px;
+    margin-left: 25%;
+    font-style: oblique;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   .section_index {
@@ -569,8 +428,8 @@ div.contenedor_index {
   }
 
   footer {
-    grid-area: footer;
     background-size: cover;
+    background-image: url(../Multimedias/oro.jpg);
   }
 
   ul {
@@ -597,19 +456,19 @@ div.contenedor_index {
 }
 
 @media only screen and (min-width: 1024px) {
-  .item_index {
-    display: flex;
+  header {
+    display: block;
     flex-direction: row-reverse;
     background-image: url(../Multimedias/especialpadre.jpg);
     background-size: cover;
   }
 
   li {
-    font-size: 17px;
+    font-size: 30px;
   }
 
   .item {
-    display: flex;
+    display: block;
     text-align: center;
     flex-direction: row;
     margin-top: 40px;
@@ -623,15 +482,13 @@ div.contenedor_index {
     width: min-content;
     font: cursiva;
     font-style: italic;
-    margin-top: 80px;
     max-width: min-content;
-    padding-right: 10px;
   }
 
   .nav_index {
     grid-area: nav;
     display: flex;
-    height: 200px;
+  ;
   }
 
   .subtitulo {
@@ -640,44 +497,23 @@ div.contenedor_index {
     display: block;
   }
 
-  .subtitulo_indumentariayaccesorios {
-    grid-area: subtitulo_indumentariayaccesorios;
-    text-align: center;
-    display: block;
-  }
-
-  .contenido_mujer {
-    grid-area: contenido_mujer;
-    text-align: center;
-    max-width: min-content;
-    text-align: justify;
-  }
-
   .contenido_hombre {
     grid-area: contenido_hombre;
     text-align: center;
     max-width: min-content;
-    text-align: justify;
+    text-align: center;
     margin-left: 40px;
-  }
-
-  .contenido_ninos {
-    grid-area: contenido_ninos;
-    text-align: justify;
-    max-width: min-content;
-    margin-bottom: 60px;
-  }
-
-  .contenido_accesorios {
-    grid-area: contenido_accesorios;
-    justify-content: center;
-    max-width: min-content;
-    text-align: justify;
-    margin-left: 20px;
+    font-style: oblique;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   .section_index {
     text-align: center;
+    background-image: linear-gradient(white, blue);
   }
 
   .contenedor_index {
@@ -690,46 +526,19 @@ div.contenedor_index {
     margin-bottom: 18px;
   }
 
-  .tituloventa {
-    text-align: center;
-  }
-
-  .section_index {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .imagen1 {
-    width: 140px;
-  }
-
   .fotohombre {
     width: 208px;
     justify-content: center;
   }
 
-  .imagen3 {
-    width: 230px;
+  .seguir{
+    display: flex;
   }
-
-  .imagen4 {
-    width: 330px;
-  }
-
   footer {
-    grid-area: footer;
+    background-image: url(../Multimedias/oro.jpg);
     background-size: cover;
   }
 
-  ul {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-  }
-  .tituloredes {
-    width: min-content;
-  }
   .face {
     width: 50px;
   }
